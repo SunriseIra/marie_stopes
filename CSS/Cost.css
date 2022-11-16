@@ -1,0 +1,559 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a:hover {
+  opacity: 0.4;
+  text-decoration: none;
+}
+p {
+  margin: 1rem;
+}
+.cost_page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 0 50px;
+  max-width: 100%;
+  height: 55vw;
+  position: relative;
+  overflow: hidden;
+  -webkit-background-size: 100%;
+  background-position: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 159, 218, 0.83) 4.53%,
+      rgba(55, 81, 114, 0) 15%
+    ),
+    url(../images/cost.png);
+}
+
+.doctor_home_text_text {
+  height: 42vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cost_home_text {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #0096ce;
+}
+
+/* vasectomy_cost */
+
+.vasectomy_cost {
+  padding: 70px 0px;
+}
+
+.vasectomy_cost_fon {
+  background: #375172;
+  border-radius: 0px 30px 0px 30px;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  width: 100%;
+  min-height: 650px;
+}
+.vasectomy_cost_colon_all {
+  display: flex;
+  padding: 50px 30px;
+}
+.vasectomy_cost_colon_first {
+  width: 40%;
+}
+
+.vasectomy_cost_colon_second {
+  width: 60%;
+}
+
+/* .vasectomy_cost_colon_third {
+  width: 30%;
+} */
+
+.vasectomy_cost_title_logo {
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+}
+.vasectomy_cost_title {
+  /* padding: 70px 40px 40px 40px; */
+  font-size: 37px;
+  color: #8ce0ff;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+}
+
+.vasectomy_cost_logo:after {
+  background-color: #d5f1fc;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  margin-top: 25px;
+  position: absolute;
+  left: 27%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.vasectomy_cost_colon_first_all_text {
+  padding: 60px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+/*  */
+
+.vasectomy_cost_colon_second_all {
+  padding: 20px;
+  display: flex;
+}
+
+.vasectomy_cost_colon_second_first {
+  padding: 0 15px;
+  width: 50%;
+}
+
+.vasectomy_cost_colon_second_second {
+  padding-top: 10px;
+  width: 50%;
+}
+/* .vasectomy_cost_colon_second_line {
+  width: 258px;
+  height: 0px;
+  left: 764px;
+  top: 813px;
+  border: 1px solid #3686a4;
+  transform: rotate(90deg);
+} */
+
+.second_first_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  padding-top: 10px;
+}
+.second_first_text_line {
+  padding: 0 10px;
+  margin: 10px 0;
+  width: 200px;
+  height: 0px;
+  left: 526px;
+  top: 939px;
+  border: 1px solid #3686a4;
+}
+.second_second_cost {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  color: #ffffff;
+  padding-top: 10px;
+}
+.vasectomy_cost_colon {
+  padding: 10px 0;
+  height: 50px;
+}
+
+.cost_inner_btn {
+  display: flex;
+  align-items: center;
+  background-color: #009fda;
+  padding: 4% 6%;
+  border: 0;
+  font-weight: bold;
+
+  border-radius: 30px;
+  box-shadow: 0px 3px 30px #0082b3;
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+.cost_inner_btn_text {
+  color: #fff;
+}
+.cost_inner_btn:hover {
+  cursor: pointer;
+}
+.cost_photo {
+  padding-left: 15px;
+}
+
+/* FAQ */
+
+.FAQ_font {
+  background-image: url(../images/Rectangle20.png);
+  max-width: 100%;
+  min-height: 874px;
+  position: relative;
+  -webkit-background-size: 100%;
+  background-position: center;
+  padding: 50px 50px 110px 50px;
+  text-align: center;
+  margin-bottom: -140px;
+}
+
+.faq_all {
+  padding: 100px 120px;
+}
+.FAQ_text_title {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 154px;
+  color: #ffffff;
+  position: absolute;
+  top: 145px;
+  left: 410px;
+}
+
+.FAQ_text_title_title_all {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.FAQ_text_title_title_all:after {
+  background-color: #c6e3ff;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.FAQ_text_title_title {
+  position: relative;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #333333;
+}
+
+.FAQ_accordion_card {
+  min-width: 695px;
+  /* height: 300px; */
+  left: 219px;
+  top: 1678px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(106, 87, 79, 0.15);
+  padding: 30px 35px;
+  margin: 10px;
+}
+
+.FAQ_accordion_card_title_colon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.FAQ_accordion_card_title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.FAQ_accordion_card .FAQ_accordion_content {
+  display: none;
+}
+
+.FAQ_accordion_content {
+  padding: 10px 30px 10px 0px;
+  text-align: left;
+  display: none;
+}
+
+.content_active .FAQ_accordion_card_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.content_active .card_colon_plass {
+  display: none;
+}
+.content_active .card_colon_plass_active {
+  display: block;
+}
+
+.content_active .FAQ_accordion_content {
+  display: block;
+}
+
+.content_active .card_colon_minus {
+  display: block;
+}
+
+.content_active .card_colon_plass {
+  display: none;
+}
+
+.card_colon_minus {
+  display: none;
+}
+
+.FAQ_accordion_card_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  /* cost_page */
+  .cost_home_text {
+    font-size: 38px;
+    line-height: 54px;
+  }
+  .vasectomy_cost_colon_all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .vasectomy_cost_colon_first {
+    width: 100%;
+  }
+  .vasectomy_cost_colon_second {
+    width: 100%;
+  }
+  .vasectomy_cost_title {
+    font-size: 40px;
+  }
+  .vasectomy_cost_logo:after {
+    left: 48%;
+    margin-top: 15px;
+  }
+  .vasectomy_cost_colon_first_all_text {
+    padding: 40px 20px 20px 20px;
+
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .vasectomy_cost_colon_second_first {
+    padding: 0 35px;
+    width: 40%;
+  }
+  .cost_inner_btn {
+    padding: 4% 6%;
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+  .faq_all {
+    padding: 80px 40px;
+  }
+  .FAQ_text_title {
+    font-size: 100px;
+    line-height: 140px;
+    top: 145px;
+    left: 310px;
+  }
+  .FAQ_text_title_title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .FAQ_text_title_title_all:after {
+    margin-top: 20px;
+
+    left: 50%;
+  }
+  .FAQ_accordion_card {
+    min-width: 580px;
+    left: 0;
+    top: 1678px;
+    padding: 30px 35px;
+    margin: 10px 0px;
+  }
+  .FAQ_accordion {
+    margin-left: -25px;
+  }
+  .FAQ_font {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 770px) {
+  .FAQ_font {
+    text-align: left;
+    margin-left: -15px;
+  }
+  .vasectomy_cost_title {
+    font-size: 30px;
+  }
+  .FAQ_accordion_card {
+    /* padding: 30px 35px; */
+  }
+  .FAQ_accordion_card {
+    min-width: 400px;
+    padding: 20px 25px;
+  }
+  .vasectomy_cost_colon_second_all {
+    padding: 20px;
+    display: flex;
+  }
+  .vasectomy_cost_colon_first_all_text {
+    padding: 40px 10px 20px 10px;
+    font-size: 17px;
+    line-height: 100%;
+  }
+  .vasectomy_cost_colon_second_all {
+    padding: 0px;
+    display: flex;
+  }
+  .vasectomy_cost_colon_second_first {
+    padding: 0 15px;
+    width: 50%;
+  }
+  .second_first_text_line {
+    padding: 0 10px;
+    margin: 7px 0;
+    width: 180px;
+  }
+  .FAQ_text_title {
+    font-size: 80px;
+    line-height: 120px;
+    top: 145px;
+    left: 220px;
+  }
+  .FAQ_text_title_title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .FAQ_text_title_title_all {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .FAQ_accordion_card_title {
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cost_home_text {
+    font-size: 30px;
+    line-height: 54px;
+  }
+  .doctor_home_text_text {
+    height: 22vw;
+  }
+  .second_first_text {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 5px;
+  }
+  .vasectomy_cost_colon {
+    padding: 5px 0;
+    height: 50px;
+  }
+  .second_first_text_line {
+    padding: 0 10px;
+    margin: 7px 0;
+    max-width: 140px;
+  }
+  .second_second_cost {
+    /* padding-left: 10px;  */
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 10px;
+  }
+  .FAQ_accordion {
+    margin-left: -55px;
+  }
+  .FAQ_accordion_card {
+    min-width: 380px;
+    left: 0;
+    top: 1678px;
+    padding: 20px 25px;
+    margin: 10px 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .doctor_home_text_text {
+    height: 22vw;
+  }
+  .second_first_text_line {
+    padding: 0 10px;
+    margin: 7px 0;
+    max-width: 100px;
+  }
+  .second_first_text {
+    font-size: 14px;
+    line-height: 12px;
+    padding-top: 5px;
+  }
+  .cost_inner_btn {
+    padding: 4% 6%;
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+  .FAQ_text_title_title_all {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  .FAQ_text_title_title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .FAQ_text_title {
+    font-size: 60px;
+    line-height: 70px;
+    top: 105px;
+    left: 140px;
+  }
+  .faq_all {
+    padding: 60px 0px;
+  }
+  .FAQ_accordion_card {
+    min-width: 290px;
+    left: 0;
+    top: 1678px;
+    padding: 20px 15px;
+    margin: 10px 0px;
+  }
+  .content_active .FAQ_accordion_card_title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .FAQ_accordion_card_title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .FAQ_accordion {
+    margin-left: 0px;
+  }
+}

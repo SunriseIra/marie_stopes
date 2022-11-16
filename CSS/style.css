@@ -1,0 +1,1848 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+p {
+  margin: 1rem;
+}
+
+.header_page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 0 50px;
+  max-width: 100%;
+  height: 55vw;
+  position: relative;
+  -webkit-background-size: 100%;
+  background-position: center;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 159, 218, 0.83) 4.53%,
+      rgba(55, 81, 114, 0) 60%
+    ),
+    url(../images/photo1.png);
+  overflow: hidden;
+}
+
+.header_inner {
+  display: flex;
+}
+
+.header_text {
+  font-size: 38px;
+  color: #fff;
+  width: 70%;
+  font-weight: 700;
+  padding: 50px 0 20px 0;
+}
+
+.header_page_text2 {
+  font-size: 18px;
+  color: #fff;
+  width: 70%;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.header_inner_btn {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 2% 4%;
+  border: 0;
+  font-weight: bold;
+  color: #375172;
+  border-radius: 30px;
+  box-shadow: 0px 3px 30px #82dcfe;
+  margin-bottom: 100px;
+}
+
+.header_inner_btn:hover {
+  cursor: pointer;
+}
+
+.header_photo {
+  padding-left: 15px;
+}
+/* nav */
+.header_inner_nav {
+  padding: 10px 0 20px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  /* margin-left: 35px; */
+  margin-top: 10px;
+}
+.nav_link {
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav_link.active {
+  font-weight: bold;
+}
+.nav_link:hover {
+  cursor: pointer;
+}
+.nav_link:hover:after,
+.nav_link.active:after {
+  opacity: 1;
+}
+.nav_link::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  opacity: 0;
+  position: absolute;
+  background-color: #000;
+  top: 100%;
+  left: 25%;
+  z-index: 1;
+  transition: opasity 0.1s linear;
+}
+
+.header_inner_photo {
+  background-color: #fff;
+  clip-path: ellipse(50% 45% at 50% 50%);
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 93%;
+  left: 0vw;
+}
+.header_inner_photo {
+  background-color: #fff;
+  /* clip-path: ellipse(50% 45% at 50% 50%); */
+  width: 100%;
+  height: 255px;
+  position: absolute;
+  top: 95%;
+  left: 0vw;
+  bottom: -1px;
+  transform: scale(1.3);
+  image-rendering: -webkit-optimize-contrast;
+  border-radius: 50%;
+}
+/* nav-toggle */
+
+.nav-toggle {
+  width: 30px;
+  padding: 10px 0;
+  font-size: 0;
+  display: none;
+  color: transparent;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+}
+
+.nav-toggle:focus {
+  outline: 0;
+}
+
+.nav-toggle_item {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  border: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  /* transition: background 0.2s linear; */
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle.active .nav-toggle_item {
+  background: none;
+}
+
+.nav-toggle_item:before,
+.nav-toggle_item:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.nav-toggle_item:before {
+  top: -8px;
+}
+
+.nav-toggle_item:after {
+  bottom: -8px;
+}
+
+.nav-toggle.active .nav-toggle_item:before {
+  transform-origin: left top;
+  transform: rotate(45deg) translate3d(0px, -2px, 0);
+}
+
+.nav-toggle.active .nav-toggle_item:after {
+  transform-origin: left bottom;
+  transform: rotate(-45deg) translate3d(0px, 3px, 0);
+}
+
+/* homepage */
+
+.homepage {
+  padding: 70px 50px 30px 50px;
+}
+
+.homepage_icons {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.homepage_icons_group {
+  width: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.homepage_icons_img {
+  width: 85px;
+  height: 85px;
+}
+
+.homepage_icons_text {
+  padding-top: 20px;
+}
+
+/* homepage_provider */
+.homepage_provider_fon {
+  background-image: url(../images/Rectangle20.png);
+  max-width: 100%;
+  min-height: 874px;
+  position: relative;
+  -webkit-background-size: 100%;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.homepage_title_logo {
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+}
+.homepage_title {
+  padding: 70px 40px 40px 40px;
+  font-size: 45px;
+  color: #375172;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+}
+
+.title_logo:after {
+  background-color: #d5f1fc;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.homepage_title_title:after {
+  background-color: #fff;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.homepage_provider_text {
+  display: flex;
+  padding: 50px 80px 100px 80px;
+  font-size: 20px;
+  color: #375172;
+  text-align: center;
+
+  font-weight: 400;
+}
+
+.homepage_provider_group_numbers {
+  /* background-image: url(../images/Rectangle9696.png); */
+  /* width: 350px;
+  height: 201px; */
+  position: relative;
+  /* -webkit-background-size: 100%; */
+  background-position: center;
+  padding: 30px;
+  text-align: center;
+  margin: 5px;
+  background: #009fda;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  border-radius: 40px 0px;
+}
+.homepage_provider_group {
+  display: flex;
+}
+
+.homepage_provider_group_numbers {
+  width: calc(100% / 3);
+}
+
+.homepage_provider_group_numb {
+  position: relative;
+  color: transparent;
+  font-size: 58px;
+  font-weight: 600;
+  /* background: linear-gradient(to top, #ffffff 45%, #009fda 45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-block-end:0;
+  margin-block-start:0;
+  transform:translateY(52px) ; */
+}
+
+.homepage_provider_group_numb::before,
+.homepage_provider_group_numb::after {
+  content: attr(data-heading);
+  position: absolute;
+  text-align: center;
+  top: -71px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.homepage_provider_group_numb::before {
+  color: #ffffff;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 50%, 0 50%);
+}
+
+.homepage_provider_group_numb::after {
+  color: #009fda;
+  clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 50%);
+  /* animation: slide 5s infinite; */
+}
+/* анімація цифр  */
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translate(-10px, 2%);
+  }
+} */
+
+.homepage_provider_group_numb_text {
+  padding: 0 5px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-top: -50px;
+}
+
+/* whychoose */
+
+.whychoose_card_card {
+  display: flex;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.whychoose_card {
+  width: calc(100% / 3);
+  text-align: center;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.whychoose_card_logo {
+  color: #edf6f9;
+  font-weight: 600;
+  font-size: 41px;
+  position: absolute;
+  /* display: block; */
+  text-align: center;
+  margin-left: 5%;
+}
+
+.whychoose_card_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 32px 0;
+  margin: 0 15px;
+  color: #000000;
+  position: relative;
+}
+
+/*  */
+
+.vasectomycost {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.vasectomycost_colon_colon {
+  display: flex;
+}
+
+.vasectomycost_colon {
+  width: 50%;
+}
+
+.vasectomycost_colon_title {
+  font-weight: 700;
+  font-size: 38px;
+  color: #8ce0ff;
+  z-index: 50;
+  position: relative;
+  padding-bottom: 20px;
+  line-height: 34px;
+}
+
+.vasectomycost_colon_text_all {
+  z-index: 50;
+  position: relative;
+  padding: 40px 40px;
+}
+.vasectomycost_colon_text_text {
+  display: flex;
+  padding: 0 10px 10px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.vasectomycost_colon_img {
+  padding-right: 10px;
+}
+.colon_vasectomy {
+  position: relative;
+}
+
+.colon_vasectomy_fon {
+  position: absolute;
+  background: #375172;
+  border-radius: 0px 30px 0px 30px;
+
+  box-shadow: 0px 30px 60px #dfe9ed;
+  width: 97%;
+  min-height: 850px;
+  z-index: 2;
+}
+
+.colon_vasectomy_fon_price {
+  margin-left: -110px;
+  margin-top: -75px;
+  /* position: absolute; */
+  background: linear-gradient(180deg, #d5f1fc 4.59%, #f7fdff 94.28%);
+  border-radius: 40px 0px;
+  z-index: 0;
+  width: 120%;
+  min-height: 1025px;
+}
+
+.vasectomycost_colon_title_second {
+  z-index: 50;
+  position: relative;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #375172;
+  padding-bottom: 30px;
+}
+
+.vasectomycost_colon_price_all {
+  padding: 50px 0 40px 120px;
+  z-index: 50;
+  position: relative;
+}
+
+.vasectomycost_colon_price_colon {
+  display: flex;
+}
+.colon_price {
+  width: 60%;
+}
+
+
+
+.colon_price_button {
+  /* display: flex; */
+  padding: 6% 33%;
+  border: 0;
+  background: #009fda;
+  box-shadow: 0px 3px 30px #82dcfe;
+  border-radius: 30px;
+  text-align: center;
+  /* margin-bottom: 100px; */
+}
+
+.colon_price_button:hover {
+  cursor: pointer;
+}
+
+.colon_price_button_text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.colon_price_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  padding-bottom: 15px;
+}
+
+.colon_price_price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 30px;
+
+  color: #000000;
+}
+
+.colon_price_linear {
+  border: none;
+  background: #bce7f7;
+  width: 90%;
+  height: 3px;
+}
+
+.Our {
+  padding-top: 60px;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 154px;
+  color: #edf6f9;
+  font-style: italic;
+}
+
+.Prices {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 40px;
+  color: #edf6f9;
+  font-style: italic;
+}
+
+/* Our Vasectomist */
+
+.ourVasectom {
+  padding-bottom: 100px;
+}
+
+.title_logo_ourTeam {
+  position: relative;
+}
+.ourTeam {
+  position: absolute;
+  right: 30px;
+  top: 24px;
+  z-index: 1;
+}
+
+.Team {
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 40px;
+  color: #edf6f9;
+  font-style: italic;
+}
+
+.ourVasectom_suptile_suptitle {
+  max-width: 766px;
+  margin: 0 auto;
+}
+
+.ourVasectom_suptile {
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  z-index: 10;
+  padding: 70px 10px;
+}
+/* ourVasectom_director */
+
+.ourVasectom_director {
+  background: #009fda;
+  border-radius: 0px 40px;
+  display: flex;
+  padding: 100px 80px;
+}
+
+.ourVasectom_director_photo_colon {
+  width: 35%;
+}
+
+.ourVasectom_director_name_colon {
+  width: 65%;
+}
+
+.ourVasectom_director_photo {
+  padding-left: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.ourVasectom_director_photo_name {
+  position: absolute;
+}
+
+.Dr {
+  font-weight: 700;
+  font-size: 118px;
+  line-height: 144px;
+  color: #0096ce;
+}
+
+.Justin {
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 58px;
+  color: #0096ce;
+}
+
+.ourVasectom_director_tittle {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.ourVasectom_director_position {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #ffffff;
+  position: relative;
+  /* padding-bottom: 20px; */
+}
+
+.ourVasectom_director_text {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.ourVasectom_director_position:after {
+  background-color: #fff;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  margin-top: 10px;
+  position: absolute;
+  left: 12%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.ourVasectom_ourTeam {
+  padding: 115px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ourTeam_card {
+  width: calc(100% / 3);
+  padding: 0px;
+  text-align: center;
+}
+
+.ourTeam_card_img {
+  width: 266px;
+  height: 266px;
+  padding-top: 70px;
+}
+.ourTeam_card_name {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  max-width: 269px;
+  margin: 0 auto;
+  color: #000000;
+  z-index: 1;
+  position: relative;
+}
+
+.Beckett:after,
+.Beckhurst:after,
+.Eskander:after,
+.Kalau:after,
+.Masterson:after,
+.Valentine:after {
+  background-color: #d5f1fc;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  z-index: 5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ourVasectom_button {
+  padding: 3% 8%;
+  border: 0;
+  background: #009fda;
+  box-shadow: 0px 3px 30px #82dcfe;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.ourVasectom_button_text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.ourVasectom_ourTeam_btn {
+  text-align: center;
+}
+
+/* ourLocations */
+.ourLocations {
+  padding: 70px 0;
+}
+
+.ourLocations_tabs_sections {
+  padding: 50px 0;
+}
+.ourLocations_tabs_nav {
+  display: flex;
+}
+
+.ourLocations_tabs_title {
+  /* width: calc(100% / 8); */
+  width: 142px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  padding: 5px 5px;
+  position: relative;
+  display: flex;
+}
+.active_title {
+  width: 142px;
+  min-height: 60px;
+  background: #009fda;
+  color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-sizing: border-box;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.tabs_canberra,
+.tabs_sydney,
+.tabs_newcastle,
+.tabs_brisbane,
+.tabs_goldCoast,
+.tabs_townsville,
+.tabs_melbourne,
+.tabs_adelaide {
+  width: 100%;
+  background: #009fda;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  border-radius: 0px 40px;
+}
+
+.canberra:after,
+.sydney:after,
+.newcastle:after,
+.brisbane:after,
+.goldCoast:after,
+.townsville:after,
+.melbourne:after,
+.adelaide:after {
+  background-color: #009fda;
+  content: "";
+  width: 31px;
+  height: 1px;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotate(90deg);
+  display: block;
+  z-index: 5;
+  margin-left: 43px;
+  /* margin-right: 20px; */
+}
+
+.tabs_sydney,
+.tabs_newcastle,
+.tabs_brisbane,
+.tabs_goldCoast,
+.tabs_townsville,
+.tabs_melbourne,
+.tabs_adelaide {
+  display: none;
+}
+
+.content_tabs {
+  display: flex;
+  padding: 20px;
+}
+
+.card_map {
+  width: 40%;
+  padding: 70px 20px 50px 60px;
+}
+
+.card_map_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.card_map_suptitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+
+.Contact {
+  font-weight: 700;
+  font-size: 104px;
+  line-height: 144px;
+  color: #0096ce;
+  font-style: italic;
+}
+
+.Us {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 44px;
+  color: #0096ce;
+  font-style: italic;
+  text-align: right;
+}
+
+.card_vasectomy {
+  width: 60%;
+  padding: 50px 40px 50px 20px;
+}
+.card_vasectomy_title {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 44px;
+  color: #ffffff;
+  padding-bottom: 60px;
+}
+
+.card_vasectomy_title:after {
+  background-color: #d5f1fc;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  position: absolute;
+  left: 59%;
+  transform: translateX(-50%);
+  display: block;
+  z-index: 5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text_items {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.text_items_img_im {
+  padding-right: 20px;
+}
+
+.text_items_text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.card_vasectomy_btn_btn {
+  text-align: center;
+}
+
+.card_vasectomy_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 4% 8%;
+  border: 0;
+  font-weight: bold;
+  color: #375172;
+  border-radius: 30px;
+  /* width: 80%; */
+  box-shadow: 0px 3px 30px #82dcfe;
+  margin: 40px 0;
+}
+
+.card_vasectomy_btn:hover {
+  cursor: pointer;
+}
+
+/* fromOurBlog */
+
+.fromOurBlog_fons {
+  background-image: url(../images/Rectangle\ 20.png);
+  max-width: 100%;
+  min-height: 874px;
+  position: relative;
+  -webkit-background-size: 100%;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.fromOurBlog_colon_col {
+  display: flex;
+  padding: 70px 0;
+}
+
+.colon_one {
+  width: 40%;
+  padding: 50px 0px;
+  padding-right: 20px;
+}
+
+.colon_new_img {
+  max-width: 380px;
+  max-height: 290px;
+}
+
+.colon_new_date {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  padding: 20px 0;
+}
+
+.colon_new_title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000;
+  padding: 10px 0;
+}
+
+.colon_new_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  padding: 10px 0;
+}
+
+.colon_new_a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #009fda;
+  text-decoration: none;
+}
+
+.colon_second {
+  width: 60%;
+  padding-left: 20px;
+}
+
+.fromOurBlog_colon_new_new {
+  display: flex;
+}
+
+.colon_new_img_im {
+  max-width: 226.77px;
+  max-height: 155.1px;
+}
+
+.colon_colon_one {
+  width: 40%;
+}
+.colon_colon_second {
+  width: 60%;
+}
+
+/* / */
+
+.footer_contacrs_fonts {
+  background-image: url(../images/footer/Rectangle851.png);
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  -webkit-background-size: 100%;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer_contacrs_fonts_colon_group {
+  display: flex;
+  padding: 70px 0;
+}
+
+.logo_img {
+  width: 225px;
+}
+.footer_contacrs_fonts_colon {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer_contacrs_fonts_colon_text {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer_colon_text {
+  text-align: left;
+  font-weight: 325;
+  font-size: 16px;
+
+  color: #ffffff;
+}
+
+.footer_contacrs_fonts_colon_social {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.footer_colon_text_text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.colon_text {
+  text-decoration: none;
+
+  font-weight: 325;
+  font-size: 16px;
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+
+.first {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+
+.foot_img {
+  padding: 0 15px;
+}
+
+.foot_img_fot {
+  margin-left: -30px;
+  width: 320px;
+  height: 76px;
+}
+
+.a_colon {
+  width: 20%;
+}
+.photo_colon {
+  width: 30%;
+  padding: 0;
+}
+
+@media (max-width: 1400px) {
+  .header_inner_photo {
+    height: 255px;
+    position: absolute;
+    top: 95%;
+  }
+}
+@media (max-width: 1130px) {
+  .header_inner_photo {
+    height: 210px;
+    position: absolute;
+    top: 95%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .homepage_title {
+    padding: 45px 40px 40px 40px;
+    font-size: 40px;
+  }
+  .homepage_title_title:after {
+    margin-top: 20px;
+  }
+  .title_logo:after {
+    margin-top: 20px;
+  }
+  /* nav */
+  .header_inner_nav {
+    font-size: 14px;
+    margin-left: -22px;
+  }
+
+  .header_text {
+    font-size: 28px;
+    padding: 10px 0;
+    width: 64%;
+  }
+  .header_page_text2 {
+    padding-bottom: 10px;
+  }
+
+  .homepage_icons_img {
+    width: 70px;
+    height: 70px;
+  }
+  .homepage_icons_text {
+    font-size: 14px;
+  }
+
+  /* homepage_provider */
+  .homepage_provider_fon {
+    min-height: 700px;
+  }
+  .homepage_provider_group_numb {
+    font-size: 40px;
+  }
+  .homepage_provider_group_numb::before,
+  .homepage_provider_group_numb::after {
+    top: -58px;
+  }
+  .homepage_provider_group_numb_text {
+    font-size: 14px;
+  }
+  .homepage_provider_text {
+    font-size: 18px;
+    padding: 15px 50px 50px 50px;
+  }
+  /* whychoose */
+  .whychoose_card_card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .whychoose_card {
+    margin-top: 30px;
+    min-width: 230px;
+  }
+  .whychoose_card_logo {
+    color: #edf6f9;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 6%;
+  }
+  .foot_img_fot {
+    margin-left: -45px;
+    width: 280px;
+    height: 65px;
+  }
+  .whychoose_card_text {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 23px 0;
+    margin: 0px 15px;
+  }
+  /* vasectomycost*/
+  .vasectomycost {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .vasectomycost_colon_colon {
+    display: block;
+  }
+  .vasectomycost_colon {
+    width: 100%;
+  }
+  .colon_vasectomy_fon {
+    min-height: 440px;
+  }
+  .vasectomycost_colon_text_all {
+    padding: 30px 50px;
+  }
+  .vasectomycost_colon_title {
+    font-size: 38px;
+
+    padding-bottom: 20px;
+  }
+  .vasectomycost_colon_text_text {
+    font-size: 16px;
+  }
+  .colon_vasectomy_fon_price {
+    /* position: relative; */
+    margin-left: 0px;
+    margin-top: -25px;
+    width: 97%;
+    min-height: 650px;
+  }
+  .ourPrices {
+    display: flex;
+  }
+  .Our {
+    padding-top: 0px;
+    font-weight: 700;
+    font-size: 88px;
+  }
+  .Prices {
+    font-weight: 700;
+    font-size: 60px;
+    padding-left: 20px;
+    padding-top: 22px;
+  }
+  .vasectomycost_colon_price_all {
+    padding: 40px 30px 10px 40px;
+  }
+  .vasectomycost_colon_title_second {
+    font-size: 26px;
+    line-height: 12px;
+    padding-bottom: 20px;
+  }
+  .ourTeam {
+    right: 0px;
+    top: -70px;
+  }
+
+  .Team {
+    font-size: 68px;
+    line-height: 40px;
+  }
+  .ourVasectom_suptile {
+    padding: 30px 10px;
+    font-size: 18px;
+  }
+  .ourVasectom_director {
+    background: #009fda;
+    border-radius: 0px 40px;
+    display: flex;
+    padding: 40px 20px;
+  }
+  .ourVasectom_director_photo {
+    padding-left: 0px;
+  }
+  .Dr {
+    font-size: 90px;
+    line-height: 75px;
+  }
+  .Justin {
+    font-size: 42px;
+    line-height: 58px;
+  }
+  .ourVasectom_director_tittle {
+    font-size: 38px;
+    line-height: 32px;
+    padding-bottom: 18px;
+  }
+  .ourVasectom_director_name_colon {
+    padding-left: 15px;
+  }
+  .ourVasectom_director_position:after {
+    left: 15%;
+  }
+  .ourVasectom_director_text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .ourVasectom {
+    padding-bottom: 50px;
+  }
+  .ourTeam_card_name {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .ourVasectom_ourTeam {
+    padding: 75px 0px;
+  }
+  .ourLocations_tabs_sections {
+    padding: 30px 0;
+  }
+  .ourLocations_tabs_nav {
+    display: block;
+  }
+  .ourLocations_tabs_title {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 25px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .active_title {
+    min-height: 50px;
+  }
+  .canberra:after,
+  .sydney:after,
+  .newcastle:after,
+  .brisbane:after,
+  .goldCoast:after,
+  .townsville:after,
+  .melbourne:after,
+  .adelaide:after {
+    display: none;
+  }
+  .content_tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card_map {
+    width: 100%;
+    padding: 20px 20px 10px 40px;
+  }
+  .card_vasectomy {
+    width: 100%;
+    padding: 20px 40px 10px 20px;
+  }
+  .card_map_title {
+    font-size: 24px;
+    line-height: 25px;
+    padding-bottom: 20px;
+  }
+  .card_vasectomy_title {
+    padding-bottom: 30px;
+  }
+  .card_map_suptitle {
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 20px;
+  }
+  .text_items_text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .text_items {
+    padding-bottom: 5px;
+  }
+  .Contact {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .Us {
+    font-size: 56px;
+    line-height: 25px;
+    text-align: inherit;
+  }
+  .ourLocations {
+    padding: 20px 0;
+  }
+  .card_vasectomy_btn {
+   
+    margin: 20px 0;
+    
+  }
+  .fromOurBlog_colon_col {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .colon_one {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .colon_second {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .colon_new_date {
+    padding: 10px 0;
+  }
+  .logo_img {
+    width: 175px;
+  }
+  p {
+    margin: 0.5rem;
+  }
+  .colon_text {
+    padding-bottom: 10px;
+  }
+  .footer_contacrs_fonts {
+    padding: 30px;
+  }
+  .footer_contacrs_fonts_colon {
+    width: 20%;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 850px) {
+  .header_inner_photo {
+    height: 190px;
+    position: absolute;
+    top: 94%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .container {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 35px;
+  }
+  .header_page {
+    padding: 10px 30px 0 30px;
+  }
+  .header_text {
+    font-size: 22px;
+    padding: 10px 0;
+    width: 50%;
+  }
+  .header_page_text2 {
+    padding-bottom: 10px;
+    font-size: 15px;
+    display: none;
+  }
+
+  .homepage_title {
+    padding: 35px 40px 20px 40px;
+
+    font-size: 30px;
+  }
+  .title_logo:after {
+    margin-top: 10px;
+  }
+  .homepage {
+    padding: 40px 30px 30px 30px;
+  }
+  .header_inner_photo {
+    height: 170px;
+    top: 94%;
+  }
+
+  .homepage_icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .homepage_icons_group {
+    min-width: 130px;
+    padding: 10px;
+  }
+
+  /* Nav */
+  .header_inner_nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 16%;
+    left: 22px;
+    background-color: #009fda;
+    /* background: linear-gradient(
+      90deg,
+      rgba(0, 159, 218, 0.83) 8.53%,
+      rgba(55, 81, 114, 0) 100%
+    ); */
+  }
+  .header_inner_nav.active {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+  .nav_link {
+    display: block;
+    margin: 0;
+    padding: 5px 20px;
+  }
+  .nav_link::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 3px;
+    opacity: 0;
+    position: absolute;
+    background-color: #000;
+    top: 100%;
+    left: 5%;
+    z-index: 1;
+    transition: opasity 0.1s linear;
+  }
+  /* homepage_provider */
+  .homepage_provider_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .homepage_provider_text {
+    padding: 20px 40px;
+    font-size: 14px;
+  }
+  .homepage_provider_group_numbers {
+    margin: 20px;
+    min-width: 190px;
+  }
+  .foot_img_fot {
+    margin-left: -45px;
+    width: 280px;
+    height: 65px;
+  }
+
+  /* vasectomycost*/
+  .colon_vasectomy_fon {
+    width: 100%;
+    min-height: 500px;
+  }
+  .vasectomycost_colon_title_second {
+    font-size: 22px;
+    line-height: 14px;
+  }
+  .vasectomycost_colon_text_text {
+    font-size: 14px;
+    padding: 0 0px 10px 0;
+  }
+  .vasectomycost_colon_title {
+    font-size: 30px;
+  }
+  .vasectomycost_colon_text_all {
+    z-index: 50;
+    position: relative;
+    padding: 30px 20px 20px 40px;
+  }
+  .colon_price_text {
+    font-size: 15px;
+    line-height: 7px;
+  }
+  .colon_price_price {
+    font-size: 14px;
+    line-height: 7px;
+    padding-bottom: 15px;
+  }
+  
+  .colon_vasectomy_fon_price {
+    min-height: 500px;
+    width: 100%;
+  }
+  .Our {
+    padding-top: 0px;
+    font-size: 80px;
+  }
+  .Prices {
+    font-size: 52px;
+    padding-left: 20px;
+    padding-top: 22px;
+  }
+  .ourVasectom_suptile {
+    padding: 30px 10px;
+    font-size: 18px;
+  }
+
+  .ourVasectom_director_photo_name {
+    display: none;
+  }
+  .ourVasectom_director {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px;
+  }
+  .ourVasectom_director_name_colon {
+    width: 100%;
+  }
+
+  .ourVasectom_director_photo_colon {
+    width: 100%;
+  }
+  .ourVasectom_ourTeam {
+    padding: 65px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ourTeam_card {
+    width: 50%;
+  }
+  .ourTeam_card_name {
+    font-size: 23px;
+    line-height: 25px;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+  .ourTeam_card_img {
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
+  }
+
+  
+  .ourLocations_tabs_nav {
+    display: block;
+  }
+  .ourLocations_tabs_title {
+    width: 100%;
+  }
+  .active_title {
+  }
+  .colon_new_title {
+    text-align: center;
+  }
+  .fromOurBlog_colon_new_new {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .colon_one {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .colon_colon_one {
+    width: 100%;
+  }
+  .colon_colon_second {
+    width: 100%;
+  }
+  .colon_new_title {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 0;
+  }
+  .colon_new_text {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 5px 0;
+  }
+  .colon_new_date {
+    font-size: 13px;
+    line-height: 14px;
+    padding: 7px 0;
+  }
+  .footer_contacrs_fonts {
+    padding: 30px;
+    max-height: 100%;
+  }
+  .footer_contacrs_fonts_colon_group {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px 0px 0px 0px;
+  }
+  .footer_contacrs_fonts_colon {
+    width: 100%;
+  }
+  .footer_contacrs_fonts_colon_social {
+    padding: 10px;
+  }
+  .footer_colon_text_text {
+    display: initial;
+  }
+  .colon_text {
+    padding: 10px;
+  }
+  .footer_contacrs_fonts_colon_text {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 35px;
+  }
+  .header_inner_photo {
+    height: 140px;
+    top: 94%;
+  }
+  .header_text {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 0;
+  }
+
+  .homepage_icons_group {
+    min-width: 150px;
+    padding: 15px 10px;
+  }
+  .homepage_provider_fon {
+    padding: 50px 20px;
+  }
+  .homepage_provider_text {
+    padding: 20px 20px;
+    font-size: 14px;
+  }
+  .whychoose_card {
+    margin-top: 20px;
+    min-width: 270px;
+  }
+  .vasectomycost_colon_text_all {
+    padding: 20px 20px 20px 20px;
+  }
+  .colon_vasectomy_fon_price {
+    margin-top: 100px;
+  }
+
+  .vasectomycost_colon_title {
+    font-size: 26px;
+    padding-bottom: 10px;
+  }
+  .vasectomycost_colon_text_text {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 0px 7px 0;
+  }
+  .vasectomycost {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .homepage_title {
+    font-size: 24px;
+    z-index: 10;
+  }
+  .ourPrices {
+    display: none;
+  }
+  .ourTeam {
+    display: none;
+  }
+  .ourVasectom_suptile {
+    padding: 20px 10px;
+    font-size: 16px;
+  }
+  .ourTeam_card {
+    width: 100%;
+  }
+  .ourTeam_card_img {
+    width: 266px;
+    height: 266px;
+    padding-top: 30px;
+  }
+  
+  .colon_new_img {
+    max-width: 350px;
+    max-height: 200px;
+  }
+  .content_tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+  }
+  .card_map_map {
+    margin-left: -20px;
+  }
+  .card_map_us {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header_inner_photo {
+    height: 100px;
+    top: 94%;
+}
+  .container {
+    padding: 0 20px;
+  }
+  .colon_vasectomy_fon {
+    width: 100%;
+    min-height: 590px;
+  }
+  .card_vasectomy_btn {
+    padding: 3% 3%;
+    margin: 20px 0;
+  }
+  .header_text {
+    width: 70%;
+  }
+  .ourVasectom_director_position:after {
+    left: 21%;
+  }
+  .ourLocations_tabs_title {
+    width: 96%;
+  }
+  .vasectomycost_colon_title_second {
+    font-size: 20px;
+    line-height: 17px;
+  }
+  .card_map {
+    width: 80%;
+    padding: 20px 20px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header_text {
+    width: 90%;
+  }
+  .header_inner_photo {
+    height: 100px;
+    top: 94%;
+  }
+}

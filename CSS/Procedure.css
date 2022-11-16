@@ -1,0 +1,1440 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a:hover {
+  opacity: 0.4;
+  text-decoration: none;
+}
+p {
+  margin: 1rem;
+}
+
+.procedure_home {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 0 50px;
+  max-width: 100%;
+  height: 55vw;
+  position: relative;
+  overflow: hidden;
+  -webkit-background-size: 100%;
+  background-position: center;
+  background-image: url(../Procedure/Mask_group.png);
+}
+
+
+
+.procedure_home_text_text {
+  height: 42vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.procedure_home_text {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #ffffff;
+ 
+}
+
+/* procedure_homepage */
+.procedure_homepage_icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.procedure_homepage_card {
+  width: calc(100% / 5);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.homepage_card_text {
+  position: relative;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.homepage_card_text:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #009fda;
+}
+/* .homepage_card_text:hover:after,
+.homepage_card_text.active:after {
+  opacity: 0;
+} */
+.homepage_card_text:hover:after {
+  display: block;
+  z-index: 5;
+  background-color: #009fda;
+  content: "";
+  width: 50%;
+  height: 3px;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opasity 0.1s linear;
+}
+
+/* what is vasectomy */
+.whatisvasectomy_text_text {
+  padding: 45px 15px;
+}
+
+.whatisvasectomy_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  padding: 20px 0px;
+}
+
+.fon_fon {
+  min-height: 900px;
+}
+
+.colon_whatis_photo {
+  width: 41%;
+}
+
+.colon_whatis {
+  width: 59%;
+}
+
+.whatisvasectomy_fon {
+  position: absolute;
+  background: #375172;
+  border-radius: 0px 30px 0px 30px;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  width: 100%;
+  min-height: 90%;
+  margin-top: 60px;
+  z-index: 2;
+}
+
+.whatisvasectomy_colon_text_all {
+  z-index: 50;
+  position: relative;
+  padding: 100px 50px;
+}
+
+.whatisvasectomy_img {
+  border-radius: 40px 0px;
+}
+
+.whatbenefits {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.what {
+  /* padding-top: 10px; */
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 154px;
+  color: #edf6f9;
+  font-style: italic;
+}
+
+.benefits {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 55px;
+  color: #edf6f9;
+  font-style: italic;
+}
+
+.proceduretypes {
+  padding: 100px 0;
+}
+
+.proceduretypes_text_text {
+  padding: 70px 20px;
+}
+
+.proceduretypes_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.proceduretypes_colon_all {
+  display: flex;
+}
+
+.proceduretypes_colon {
+  width: 50%;
+  padding: 50px 40px 30px 10px;
+}
+
+.proceduretypes_colon_img {
+  padding-left: 20px;
+}
+
+.proceduretypes_card_logo {
+  color: #edf6f9;
+  font-weight: 600;
+  font-size: 41px;
+  position: absolute;
+  text-align: center;
+  margin-left: 150px;
+  margin-top: -5px;
+}
+
+.proceduretypes_colon_title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #375172;
+  padding: 20px;
+  position: relative;
+}
+
+.proceduretypes_colon_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  padding: 15px;
+}
+
+.anaesthetic_fons {
+  background-image: url(../Procedure/Rectangle8585.png);
+  max-width: 100%;
+  min-height: 770px;
+  position: relative;
+  -webkit-background-size: 100%;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.anaesthetic_fons_colon_all {
+  display: flex;
+}
+
+.anaesthetic_fons_colon {
+  width: 50%;
+}
+.anaesthetic_fons_colon_title {
+  font-weight: 700;
+  font-size: 43px;
+  color: #8ce0ff;
+  z-index: 50;
+  position: relative;
+  padding: 90px 0px 30px 5px;
+}
+
+.anaesthetic_fons_colon_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  color: #ffffff;
+  padding: 20px 5px;
+}
+
+.anaesthetic_fons_colon_img_img {
+  border-radius: 30px 0px 30px 0px;
+}
+
+.Anaesthetic {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 40px;
+  text-align: right;
+  color: #39577d;
+  padding-top: 50px;
+  margin-right: -10px;
+}
+.Sedation {
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 100px;
+  text-align: right;
+  color: #39577d;
+  margin-left: -15px;
+  padding-bottom: 20px;
+}
+
+.recovery_colon_colon {
+  display: flex;
+  padding: 90px 0px;
+}
+
+.ecovery_colon_first {
+  width: 44%;
+}
+.ecovery_colon_second {
+  width: 56%;
+}
+.recovery_colon_text_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.recovery_img {
+  border-radius: 30px 0px 30px 0px;
+}
+.recovery_colon_title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.recovery_colon_second {
+  position: relative;
+  z-index: 20;
+  padding: 20px 40px;
+}
+.recovery_fon {
+  position: absolute;
+  background: #009fda;
+  border-radius: 0px 30px 0px 30px;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  width: 50%;
+  height: 100%;
+  margin-top: 15px;
+}
+
+.recovery_fon_fon {
+  position: absolute;
+  background: #009fda;
+  border-radius: 0px 30px 0px 30px;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  width: 50%;
+  height: 92%;
+  margin-top: 15px;
+  z-index: 2;
+}
+.whatsupport {
+  text-align: center;
+  margin-top: -20px;
+}
+.what_Our {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 35px;
+  color: #edf6f9;
+  font-style: italic;
+  margin-left: 150px;
+}
+
+.support {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 35px;
+  color: #edf6f9;
+  font-style: italic;
+}
+
+.returning {
+  padding: 50px 0px 120px 0px;
+}
+.returning_colon_all {
+  display: flex;
+  padding: 90px 0px;
+}
+
+.returning_colon_first {
+  width: 58%;
+  position: relative;
+  /* z-index: 10; */
+}
+
+.returning_colon_fon {
+  position: absolute;
+  background: #375172;
+  border-radius: 0px 30px 0px 30px;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  width: 97%;
+  min-height: 500px;
+  /* margin-top: 60px; */
+  z-index: 10;
+}
+
+.returning_colon_second {
+  width: 42%;
+  z-index: 0;
+  position: relative;
+}
+
+.returning_img {
+  left: -190px;
+  position: absolute;
+  -webkit-background-size: 100%;
+  border-radius: 30px 0px 30px 0px;
+  background-position: center;
+  /* padding: 50px; */
+  /* text-align: center; */
+  z-index: 0;
+}
+.returning_colon_t {
+  position: relative;
+  z-index: 20;
+  padding: 50px 50px;
+}
+
+.returning_colon_title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #8ce0ff;
+  padding-bottom: 30px;
+}
+
+.returning_colon_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.ReturningOur {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 35px;
+  color: #edf6f9;
+  font-style: italic;
+  margin-left: 50px;
+}
+/* .Returningport {
+  /* text-align: center; 
+} */
+
+.towork {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 35px;
+  color: #edf6f9;
+  font-style: italic;
+}
+
+.PhysicalOur {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 35px;
+  color: #edf6f9;
+  font-style: italic;
+  margin-left: 200px;
+}
+.Physicalport {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.activity {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 40px;
+  color: #edf6f9;
+  font-style: italic;
+}
+
+/*  aftevasoct*/
+.aftevasoct_colon_fon {
+  position: absolute;
+  background: #375172;
+  border-radius: 0px 30px 0px 30px;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  width: 98%;
+  min-height: 800px;
+  /* margin-top: 60px; */
+  z-index: 10;
+}
+
+.aftevasoct_colon_first {
+  width: 58%;
+  position: relative;
+}
+.aftevasoct_colon_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  color: #8ce0ff;
+  padding-bottom: 30px;
+}
+.aftevasoct_colon_t {
+  position: relative;
+  z-index: 20;
+  padding: 40px 40px;
+}
+.aftevasoct_colon_second {
+  width: 42%;
+  z-index: 0;
+  position: relative;
+}
+
+.aftevasoct_img {
+  /* min-width: 560px; */
+  left: -190px;
+  position: absolute;
+  -webkit-background-size: 100%;
+  border-radius: 30px 0px 30px 0px;
+  background-position: center;
+  /* padding-top: 50px; */
+  /* text-align: center; */
+  z-index: 0;
+}
+
+.aftevasoctport {
+  /* text-align: center; */
+  margin-top: 130px;
+}
+
+/* question */
+.question_fons {
+  background-image: url(../Procedure/Group\ 180.png);
+  max-width: 100%;
+  min-height: 1100px;
+  position: relative;
+  -webkit-background-size: 100%;
+  background-position: center;
+  margin-bottom: -425px;
+  text-align: center;
+}
+
+/* question */
+.question_section_section {
+  padding: 120px;
+}
+
+.question_section_title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+
+.question_section_subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.question_section_forms {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+/* .question_section_form_colon_all {
+} */
+
+.question_section_form_colon {
+  display: flex;
+}
+.question_form_colon {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.question_form_input {
+  box-sizing: border-box;
+  max-width: 406.31px;
+  max-height: 57.03px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(5px);
+  margin: 10px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.question_form_message {
+  box-sizing: border-box;
+  /* width: 93%; */
+  max-height: 120px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(5px);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+.question_form_button {
+  box-sizing: border-box;
+  min-width: 50%;
+  max-height: 57.03px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(5px);
+  margin: 10px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.question_form_button:hover {
+  cursor: pointer;
+}
+.question_section_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.error .question_span {
+  opacity: 1;
+}
+
+.error .myelem {
+  box-sizing: border-box;
+  background: rgba(247, 5, 17, 0.137);
+  border: 2px solid #b40606;
+}
+
+.question_span {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 10px;
+  color: rgb(223, 5, 5);
+  opacity: 0;
+  margin: -20px;
+  margin-left: 20px;
+  text-align: left;
+}
+.section_checkbox {
+  opacity: 0.9;
+  transform: scale(2);
+  margin-right: 11px;
+  border: 2px solid #898e95;
+}
+.section_checkbox:checked {
+  /* opacity: 0.7; */
+  background-color: #24afe2;
+  border: 4px solid #24afe2;
+}
+
+.section_label {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.section_checkbox_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+}
+.check-highload {
+  position: absolute;
+  opacity: 0;
+}
+/* .section_checkbox:checked {
+  background-color: green;
+} */
+
+@media (max-width: 1230px) {
+}
+
+@media screen and (max-width: 990px) {
+  .procedure_home {
+    height: 65vw;
+  }
+  .procedure_home_text {
+    font-size: 38px;
+  }
+
+  /* procedure_homepage_ */
+  .procedure_homepage_icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .procedure_homepage_card {
+    min-width: 150px;
+  }
+  /* whatisvasectomy */
+  .whatisvasectomy_text_text {
+    padding: 15px 15px;
+  }
+  .whatisvasectomy_text {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 0px;
+  }
+  .colon_whatis_photo_img {
+    display: flex;
+    justify-content: center;
+  }
+  .whatisvasectomy_img {
+    width: 411px;
+    height: 411px;
+  }
+  .vasectomycost_colon_colon {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .colon_whatis_photo {
+    width: 100%;
+  }
+  .colon_whatis {
+    width: 100%;
+  }
+  .whatbenefits {
+    text-align: left;
+  }
+  .what {
+    font-size: 90px;
+    line-height: 70px;
+  }
+  .whatisvasectomy_colon_text_all {
+    z-index: 50;
+    position: relative;
+    padding: 100px 50px;
+  }
+  .whatisvasectomy_fon {
+    min-height: 88%;
+  }
+  /* proceduretypes */
+  .proceduretypes {
+    padding: 40px 0;
+  }
+  .proceduretypes_text_text {
+    padding: 20px 20px;
+  }
+  .proceduretypes_text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .proceduretypes_colon {
+    width: 50%;
+    padding: 50px 20px 30px 10px;
+  }
+  .proceduretypes_card_logo {
+    font-size: 37px;
+    margin-left: 59px;
+    margin-top: -5px;
+  }
+  .anaesthetic_fons {
+    padding: 40px;
+  }
+  .anaesthetic_fons_colon_title {
+    font-size: 38px;
+    padding: 40px 0px 20px 0px;
+  }
+  .anaesthetic_fons_colon_text {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 5px;
+  }
+  .Sedation {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  .anaesthetic_fons_colon_img_img {
+    width: 344px;
+    height: 300px;
+    border-radius: 30px 0px 30px 0px;
+  }
+  /* recovery */
+  .recovery_colon_colon {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0px;
+  }
+  .ecovery_colon_first {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .recovery_colon_second {
+    padding: 20px 23px;
+  }
+  .recovery_img {
+    width: 505px;
+    height: 430px;
+    border-radius: 30px 0px 30px 0px;
+  }
+  .ecovery_colon_second {
+    width: 100%;
+  }
+  .recovery_fon {
+    width: 88%;
+    height: 61%;
+    margin-top: 15px;
+    z-index: 2;
+  }
+
+  .recovery_fon_fon {
+    width: 88%;
+    height: 65%;
+    margin-top: 15px;
+    z-index: 2;
+  }
+  .recovery_colon_title {
+    padding: 10px 0;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .recovery_colon_text_text {
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .whatsupport {
+    text-align: left;
+    margin-top: 0px;
+  }
+  .what_Our {
+    margin-left: 20px;
+  }
+  /* returning */
+  .returning {
+    padding: 20px 0px 30px 0px;
+  }
+  .returning_colon_all {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  .returning_colon_first {
+    width: 100%;
+  }
+  .returning_colon_second {
+    width: 100%;
+    z-index: 0;
+    position: relative;
+  }
+  .returning_img_img {
+    display: flex;
+    justify-content: center;
+  }
+  .returning_colon_fon {
+    width: 100%;
+    min-height: 92%;
+    /* margin-top: 60px; */
+  }
+  .returning_colon_t {
+    padding: 40px 40px;
+  }
+  .returning_img {
+    position: relative;
+    left: 0px;
+
+    width: 505px;
+    height: 430px;
+  }
+  .returning_colon_title {
+    font-size: 26px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+  .returning_colon_text {
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 12px;
+  }
+  .ReturningOur {
+    font-size: 50px;
+    line-height: 30px;
+    margin-left: 50px;
+  }
+  .towork {
+    font-size: 37px;
+    line-height: 35px;
+  }
+  /* recovery */
+  .Physicalport {
+    text-align: center;
+    margin-top: -20px;
+  }
+  .PhysicalOur {
+    font-size: 50px;
+    line-height: 35px;
+    margin-left: 200px;
+  }
+  .activity {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  /* aftevasoct */
+  .aftevasoct_colon_first {
+    width: 100%;
+  }
+  .aftevasoct_colon_second {
+    width: 100%;
+  }
+  .aftevasoct_colon_fon {
+    width: 100%;
+    min-height: 97%;
+  }
+  .aftevasoct_colon_title {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 13px;
+  }
+  .aftevasoct_colon_t {
+    position: relative;
+    z-index: 20;
+    padding: 30px 30px;
+  }
+  .aftevasoctport {
+    margin-top: 20px;
+  }
+  .aftevasoct_colon_second_img {
+    display: flex;
+    justify-content: center;
+  }
+  .aftevasoct_img {
+    position: relative;
+    left: 15px;
+    width: 405px;
+  }
+  .question_section_title {
+    font-size: 40px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+  .question_section_subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 35px;
+  }
+  .procedure_home_text {
+    font-size: 30px;
+  }
+  /* whatisvasectomy */
+  .whatisvasectomy_text {
+    font-size: 17px;
+    line-height: 23px;
+    padding: 10px 0px;
+  }
+  .what {
+    font-size: 70px;
+    line-height: 55px;
+  }
+  .benefits {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .whatisvasectomy_fon {
+    min-height: 97%;
+    margin-top: 20px;
+  }
+  .whatisvasectomy_colon_text_all {
+    padding: 40px 50px;
+  }
+  /* proceduretypes */
+  .proceduretypes {
+    padding: 20px 0;
+  }
+  .proceduretypes_text_text {
+    padding: 20px 20px;
+  }
+  .proceduretypes_text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .proceduretypes_colon_all {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .proceduretypes_colon {
+    width: 100%;
+    padding: 15px 20px 30px 10px;
+  }
+  .proceduretypes_colon_img {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .proceduretypes_colon_title {
+    font-size: 28px;
+    line-height: 38px;
+    padding: 20px;
+    text-align: center;
+  }
+  .proceduretypes_colon_title {
+    font-size: 28px;
+    line-height: 38px;
+    padding: 12px;
+  }
+  .proceduretypes_colon_text {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+  }
+  /* anaesthetic */
+  .anaesthetic_fons_colon_all {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .anaesthetic_fons_colon {
+    width: 100%;
+  }
+  .anaesthetic_fons_colon_title {
+    font-size: 30px;
+    padding: 20px 0px 20px 0px;
+  }
+  .anaesthetic_fons_colon_text {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 10px 5px;
+  }
+  .Anaesthetic {
+    font-size: 50px;
+    line-height: 30px;
+    padding-top: 0px;
+    margin-right: -10px;
+  }
+  .Sedation {
+    font-size: 44px;
+    line-height: 45px;
+    padding-bottom: 10px;
+  }
+  .anaesthetic_fons_colon_img_img {
+    width: 280px;
+    height: 220px;
+  }
+  .aftevasoct_colon_title {
+    font-size: 22px;
+    line-height: 25px;
+    padding-bottom: 15px;
+  }
+  /* recovery */
+  .recovery_colon_colon {
+    padding: 20px 0px;
+  }
+  .recovery_img {
+    width: 405px;
+    height: 300px;
+  }
+  .what_Our {
+    margin-left: 10px;
+  }
+
+  .support {
+    font-size: 40px;
+    line-height: 32px;
+  }
+  .recovery_fon {
+    width: 88%;
+    height: 56%;
+    margin-top: 15px;
+    z-index: 2;
+  }
+  .recovery_fon_fon {
+    width: 88%;
+    height: 65%;
+    margin-top: 15px;
+    z-index: 2;
+  }
+
+  .recovery_colon_title {
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .recovery_colon_text_text {
+    padding: 5px 0;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  /* returning */
+  .returning_colon_fon {
+    width: 100%;
+    min-height: 98%;
+  }
+  .returning_colon_t {
+    padding: 20px 30px;
+  }
+  .returning_colon_title {
+    font-size: 22px;
+    line-height: 25px;
+    padding-bottom: 15px;
+  }
+  .returning_colon_text {
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 10px;
+  }
+  .returning_img {
+    /* left: 52px; */
+    width: 405px;
+    height: 300px;
+  }
+  /* question */
+  .question_section_section {
+    padding: 80px;
+  }
+  .question_section_title {
+    font-size: 34px;
+    line-height: 10px;
+    padding-bottom: 20px;
+  }
+  .question_section_subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+  .question_section_form_colon {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .question_form_colon {
+    width: 100%;
+  }
+  .question_form_input {
+    line-height: 25px;
+  }
+  .section_label {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .section_checkbox_text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .question_form_message {
+    max-width: 406.31px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .procedure_home {
+    padding: 20px 30px 0 30px;
+    height: 65vw;
+  }
+  .procedure_home_text_text {
+    height: 20vw;
+  }
+  .procedure_home_text {
+    font-size: 26px;
+  }
+  .homepage_card_text {
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .homepage_card_text:hover {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  /* whatisvasectomy */
+  .whatisvasectomy_text {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 6px 0px;
+  }
+  .whatisvasectomy_img {
+    width: 311px;
+    height: 311px;
+  }
+  .what {
+    font-size: 50px;
+    line-height: 38px;
+  }
+  .benefits {
+    font-size: 35px;
+    line-height: 28px;
+  }
+  .whatisvasectomy_colon_text_all {
+    padding: 40px 30px;
+  }
+  .vasectomycost_colon_text_text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  /* proceduretypes */
+  .proceduretypes_text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .proceduretypes_card_logo {
+    font-size: 32px;
+    margin-left: 59px;
+    margin-top: -7px;
+  }
+  .proceduretypes_colon_title {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 10px;
+  }
+  .proceduretypes_colon {
+    width: 100%;
+    padding: 15px 20px 15px 10px;
+  }
+  .proceduretypes_colon_text {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 7px;
+  }
+  /* anaesthetic */
+  .anaesthetic_fons_colon_text {
+    padding: 8px 5px;
+  }
+  .Anaesthetic {
+    font-size: 44px;
+    line-height: 20px;
+  }
+  .Sedation {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .anaesthetic_fons {
+    min-height: 820px;
+  }
+  /* recovery */
+  .recovery_img {
+    width: 280px;
+    height: 220px;
+  }
+  .what_Our {
+    font-size: 50px;
+    line-height: 23px;
+    margin-left: 10px;
+  }
+  .support {
+    font-size: 34px;
+    line-height: 32px;
+  }
+  .recovery_fon {
+    width: 87%;
+    height: 68%;
+    margin-top: 8px;
+    z-index: 2;
+  }
+  .recovery_fon_fon {
+    width: 86%;
+    height: 65%;
+    margin-top: 15px;
+    z-index: 2;
+  }
+  .recovery_colon_second {
+    padding: 20px 20px;
+  }
+  .recovery_colon_title {
+    padding: 8px 0;
+    font-size: 19px;
+    line-height: 17px;
+  }
+  /* returning */
+  .returning_colon_fon {
+    width: 100%;
+    min-height: 97%;
+  }
+  .returning_colon_title {
+    font-size: 21px;
+    line-height: 22px;
+    padding-bottom: 12px;
+  }
+  .returning_colon_text {
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 8px;
+  }
+  .ReturningOur {
+    font-size: 45px;
+    line-height: 25px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .towork {
+    font-size: 37px;
+    line-height: 35px;
+  }
+  .returning_colon_all {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+  .returning {
+    padding: 20px 0px 20px 0px;
+  }
+  .returning_img {
+    /* left: 52px; */
+    width: 280px;
+    height: 220px;
+  }
+  /* Recovery */
+  .Physicalport {
+    text-align: center;
+    margin-top: -25px;
+  }
+  .PhysicalOur {
+    font-size: 37px;
+    line-height: 20px;
+    margin-left: 180px;
+  }
+
+  .aftevasoct_colon_title {
+    /* font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 13px; */
+    font-size: 21px;
+    line-height: 22px;
+    padding-bottom: 12px;
+  }
+  .aftevasoct_colon_t {
+    padding: 20px 20px;
+  }
+  .aftevasoct_colon_fon {
+    width: 100%;
+    min-height: 99%;
+  }
+  .aftevasoct_img {
+    left: 0px;
+    width: 280px;
+    height: 220px;
+  }
+  .question_section_section {
+    padding: 70px 30px;
+  }
+  .question_section_title {
+    font-size: 34px;
+    line-height: 10px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+  }
+  .question_section_subtitle {
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 18px;
+  }
+  .question_form_input {
+    max-width: 406.31px;
+    max-height: 57.03px;
+    margin: 8px;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 6px;
+  }
+  .question_form_message {
+    max-height: 120px;
+    font-size: 22px;
+    line-height: 35px;
+    padding: 8px 5px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .procedure_home {
+    padding: 20px 30px 0 30px;
+    height: 65vw;
+  }
+  .whatisvasectomy_text {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 6px 0px;
+  }
+  .vasectomycost_colon_title {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+  .whatisvasectomy_fon {
+    min-height: 95%;
+  }
+  .anaesthetic_fons_colon_title {
+    font-size: 27px;
+  }
+
+  .recovery_fon_fon {
+    width: 90%;
+    height: 70%;
+  }
+  .Anaesthetic {
+    font-size: 37px;
+    line-height: 14px;
+  }
+  .anaesthetic_fons {
+    min-height: 920px;
+  }
+  .recovery_fon {
+    height: 80%;
+  }
+  .PhysicalOur {
+    font-size: 37px;
+    line-height: 20px;
+    margin-left: 180px;
+  }
+  .question_section_title {
+    font-size: 25px;
+    line-height: 8px;
+    padding-bottom: 18px;
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .recovery_fon {
+    height: 90%;
+  }
+}

@@ -1,0 +1,591 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a:hover {
+  opacity: 0.4;
+  text-decoration: none;
+}
+p {
+  margin: 1rem;
+}
+.doctor_page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 0 50px;
+  max-width: 100%;
+  height: 55vw;
+  position: relative;
+  overflow: hidden;
+  -webkit-background-size: 100%;
+  background-position: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 159, 218, 0.83) 4.53%,
+      rgba(55, 81, 114, 0) 15%
+    ),
+    url(../Doctors/image\ 83.png);
+}
+
+
+
+.doctor_home_text_text {
+  height: 42vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctor_home_text {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* doctor_header_text */
+.doctor_header_text {
+  position: relative;
+  padding: 40px;
+  /* padding: 20px 70px; */
+  text-align: center;
+  z-index: 10;
+}
+
+.doctor_header_text_text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  padding: 0px 90px;
+}
+
+/* doctor */
+
+.director_vasectomy {
+  padding: 70px 0;
+}
+.director_vasectomy_colon_all {
+  display: flex;
+  z-index: 10;
+}
+.director_vasectomy_fon {
+  /* width: 1029px;
+  height: 723px; */
+  background: #009fda;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  border-radius: 0px 40px;
+  padding: 50px 70px;
+  z-index: 0;
+}
+
+.director_vasectomy_colon_first {
+  width: 65%;
+  padding: 10px;
+}
+
+.director_vasectomy_colon_second {
+  width: 35%;
+  padding: 20px 50px;
+}
+
+.director_colon_first_title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.director_colon_first_suptitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.director_colon_first_suptitle:after {
+  background-color: #fff;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  margin-top: 10px;
+  position: absolute;
+  left: 17%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.director_colon_first_text {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  z-index: 10;
+}
+
+/*  */
+
+.beckett_vasectomy {
+  padding: 40px 0;
+}
+.becket_vasectomy_colon_all {
+  display: flex;
+}
+
+.becket_vasectomy_colon_first {
+  width: 35%;
+}
+.becket_vasectomy_colon_second {
+  width: 65%;
+  padding: 30px 50px;
+}
+
+.becket_vasectomy_fon {
+  background: #ffffff;
+  box-shadow: 0px 30px 60px #dfe9ed;
+  border-radius: 0px 40px;
+  padding: 40px;
+}
+
+.becket_vasectomy_colon_second_title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 125%;
+  color: #375172;
+  padding-bottom: 50px;
+}
+
+.becket_vasectomy_colon_second_title:after {
+  background-color: #d5f1fc;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  margin-top: 10px;
+  position: absolute;
+  left: 47%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.becket_vasectomy_colon_second_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.becket_vasectomy_colon_first_photo {
+  height: 266px;
+}
+
+.becket_vasectomy_photo_name {
+  text-align: left;
+}
+.becket_Dr {
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 154px;
+  color: #e3f7ff;
+}
+
+.becket_Justin {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 50px;
+  color: #e3f7ff;
+}
+
+/* beckhurst */
+.beckhurst_colon_first_title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.beckhurst_colon_first_text {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.beckhurst_colon_first_title:after {
+  background-color: #fff;
+  content: "";
+  width: 118px;
+  height: 5px;
+  border-radius: 30px;
+  margin-top: 10px;
+  position: absolute;
+  left: 20%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+@media (max-width: 1500px) {
+  .beckhurst_colon_first_title:after {
+    background-color: #fff;
+    content: "";
+    width: 118px;
+    height: 5px;
+    border-radius: 30px;
+    margin-top: 10px;
+    position: absolute;
+    left: 24%;
+    transform: translateX(-50%);
+    display: block;
+  }
+}
+@media (max-width: 1130px) {
+  .beckhurst_colon_first_title:after {
+    background-color: #fff;
+    content: "";
+    width: 118px;
+    height: 5px;
+    border-radius: 30px;
+    margin-top: 10px;
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    display: block;
+  }
+}
+@media (max-width: 990px) {
+  .director_colon_first_suptitle:after {
+    left: 12%;
+  }
+  /* doctor_page */
+  .doctor_home_text {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .doctor_inner_photo {
+    top: 91%;
+  }
+  .doctor_header_text_text {
+    font-size: 19px;
+    line-height: 27px;
+    padding: 0px 80px;
+  }
+  /* director_vasectomy */
+  .director_vasectomy {
+    padding: 50px 0;
+  }
+  .director_vasectomy_fon {
+    padding: 40px 50px;
+  }
+  .director_vasectomy_colon_all {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    z-index: 10;
+  }
+  .director_vasectomy_colon_first {
+    width: 100%;
+    padding: 10px;
+  }
+  .director_vasectomy_colon_second {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+  }
+  .ourVasectom_director_photo_name {
+    position: relative;
+    margin-left: 20px;
+    top: 30px;
+  }
+  .director_colon_first_text {
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .director_colon_first_title {
+    font-size: 36px;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+  .director_colon_first_suptitle {
+    font-size: 19px;
+    line-height: 26px;
+    padding-bottom: 15px;
+  }
+  /* beckett_vasectomy */
+  .becket_vasectomy_colon_all {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .becket_vasectomy_colon_first {
+    display: flex;
+    width: 100%;
+  }
+  .becket_vasectomy_colon_second {
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .becket_vasectomy_photo_name {
+    margin-left: 20px;
+  }
+  .becket_Dr {
+    font-size: 90px;
+    line-height: 115px;
+  }
+  .becket_Justin {
+    font-size: 50px;
+    line-height: 40px;
+  }
+  .becket_vasectomy_colon_second_title {
+    font-size: 35px;
+    line-height: 85%;
+    padding-bottom: 30px;
+  }
+  .becket_vasectomy_colon_second_text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .becket_vasectomy_colon_second_title:after {
+    left: 22%;
+  }
+  .beckhurst_photo_name {
+    margin-left: 20px;
+  }
+  .beckhurst_colon_first_title {
+    font-size: 35px;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+  .beckhurst_colon_first_text {
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .beckhurst_colon_first_title:after {
+    left: 24%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .director_colon_first_suptitle:after {
+    left: 14%;
+  }
+  .doctor_home_text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .doctor_inner_photo {
+    top: 88%;
+  }
+  .doctor_header_text_text {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0px 40px;
+  }
+  .doctor_header_text {
+    position: relative;
+    padding: 40px 20px 15px 20px;
+    text-align: center;
+    z-index: 10;
+  }
+  .director_vasectomy {
+    padding: 40px 0;
+  }
+  .director_vasectomy_fon {
+    padding: 20px 20px;
+  }
+  .director_colon_first_title {
+    font-size: 30px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
+  .director_colon_first_text {
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .becket_vasectomy_colon_second_text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .becket_Dr {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  .becket_Justin {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .becket_vasectomy_colon_second_title:after {
+    left: 27%;
+  }
+  .beckhurst_photo_name {
+    margin-left: 10px;
+  }
+  .Dr {
+    font-size: 65px;
+    line-height: 50px;
+  }
+  .Justin {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .beckhurst_colon_first_title:after {
+    left: 26%;
+  }
+}
+
+@media (max-width: 600px) {
+  .director_colon_first_suptitle:after {
+    left: 18%;
+  }
+  .doctor_home_text_text {
+    height: 22vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .doctor_home_text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .doctor_inner_photo {
+    top: 86%;
+  }
+
+  .doctor_header_text_text {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0px 20px;
+  }
+  .container {
+    padding: 0 35px;
+  }
+  .director_colon_first_text {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .becket_vasectomy_photo_name {
+    display: none;
+  }
+  .beckhurst_photo_name {
+    display: none;
+  }
+  .becket_vasectomy_colon_first_photo {
+    height: 226px;
+  }
+  .becket_vasectomy_colon_second_title {
+    font-size: 30px;
+    line-height: 85%;
+    padding-bottom: 30px;
+  }
+  .becket_vasectomy_colon_second_title:after {
+    left: 28%;
+}
+  .becket_vasectomy_fon {
+    padding: 20px;
+  }
+  .beckhurst_colon_first_title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+  .beckhurst_colon_first_text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .beckett_vasectomy {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .doctor_home_text {
+    font-size: 24px;
+    line-height: 30px;
+}
+  .director_colon_first_suptitle:after {
+    left: 25%;
+  }
+  .becket_vasectomy_colon_second_title {
+    font-size: 26px;
+    line-height: 85%;
+    padding-bottom: 30px;
+  }
+  .becket_vasectomy_colon_second_title:after {
+    left: 36%;
+  }
+  .beckhurst_colon_first_title {
+    font-size: 26px;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+  .beckhurst_colon_first_title:after {
+    left: 34%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .director_colon_first_suptitle:after {
+    left: 28%;
+  }
+  .beckhurst_colon_first_title:after {
+    left: 36%;
+  }
+  .becket_vasectomy_colon_second_title {
+    font-size: 26px;
+    line-height: 85%;
+    padding-bottom: 30px;
+  }
+  .becket_vasectomy_colon_second_title:after {
+    left: 38%;
+  }
+  .beckhurst_colon_first_title {
+    font-size: 26px;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+}
