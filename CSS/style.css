@@ -520,8 +520,6 @@ p {
   width: 60%;
 }
 
-
-
 .colon_price_button {
   /* display: flex; */
   padding: 6% 33%;
@@ -1413,9 +1411,7 @@ p {
     padding: 20px 0;
   }
   .card_vasectomy_btn {
-   
     margin: 20px 0;
-    
   }
   .fromOurBlog_colon_col {
     flex-wrap: wrap;
@@ -1509,6 +1505,8 @@ p {
     position: absolute;
     top: 16%;
     left: 22px;
+    line-height: 20px;
+    z-index: 100;
     background-color: #009fda;
     /* background: linear-gradient(
       90deg,
@@ -1591,7 +1589,7 @@ p {
     line-height: 7px;
     padding-bottom: 15px;
   }
-  
+
   .colon_vasectomy_fon_price {
     min-height: 500px;
     width: 100%;
@@ -1645,7 +1643,6 @@ p {
     padding-top: 50px;
   }
 
-  
   .ourLocations_tabs_nav {
     display: block;
   }
@@ -1717,6 +1714,9 @@ p {
   .container {
     padding: 0 35px;
   }
+  .header_logo_img {
+    width: 180px;
+  }
   .header_inner_photo {
     height: 140px;
     top: 94%;
@@ -1784,7 +1784,7 @@ p {
     height: 266px;
     padding-top: 30px;
   }
-  
+
   .colon_new_img {
     max-width: 350px;
     max-height: 200px;
@@ -1806,7 +1806,7 @@ p {
   .header_inner_photo {
     height: 100px;
     top: 94%;
-}
+  }
   .container {
     padding: 0 20px;
   }
