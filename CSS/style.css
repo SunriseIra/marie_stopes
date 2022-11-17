@@ -1524,7 +1524,7 @@ p {
   .nav_link {
     display: block;
     margin: 0;
-    padding: 5px 20px;
+    padding: 3px 20px;
   }
   .nav_link::after {
     content: "";
@@ -1715,7 +1715,7 @@ p {
     padding: 0 35px;
   }
   .header_logo_img {
-    width: 180px;
+    width: 160px;
   }
   .header_inner_photo {
     height: 140px;

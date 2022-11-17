@@ -422,6 +422,12 @@ p {
   z-index: 5;
   margin-top: 2%;
 }
+.question_section_checkbox {
+  padding-left: 15px;
+}
+.section_checkbox_text {
+  padding-left: 10px;
+}
 .podcast_colon_first_img_micro {
   position: absolute;
   /* top: 244vw;
@@ -584,7 +590,7 @@ p {
   }
   .order_fon_colon_first {
     width: 100%;
-    padding: 40px 80px;
+    padding: 40px 60px;
   }
   .order_fon_colon_second {
     width: 100%;
@@ -689,6 +695,9 @@ p {
   .container {
     padding: 0 35px;
   }
+  .order_fon {
+    padding: 50px 30px;
+  }
   .podcast_colon_first_img_micro {
     top: 25vw;
     left: 32vw;
@@ -717,7 +726,7 @@ p {
   }
   .order_fon_colon_first {
     width: 100%;
-    padding: 40px 50px;
+    padding: 40px 0px 20px 0px;
   }
   .order_fon_colon_img_fon {
     width: 281px;
@@ -757,6 +766,23 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  .popup_content {
+    background-color: #39567d;
+    max-width: 450px;
+    padding: 30px;
+    position: relative;
+    /* transition: all 0.8s ease 0s; */
+  }
+  .popup_content {
+    background-color: #39567d;
+    max-width: 450px;
+    padding: 15px;
+    position: relative;
+    /* transition: all 0.8s ease 0s; */
+  }
+  .popup_content_form {
+    padding: 20px 40px;
+  }
   .order_fon_colon_img_fon {
     display: none;
   }
@@ -770,6 +796,17 @@ p {
   .container {
     padding: 0 20px;
   }
+  .popup_content {
+    background-color: #39567d;
+    max-width: 350px;
+    padding: 30px;
+    position: relative;
+    /* transition: all 0.8s ease 0s; */
+  }
+
+  .popup_content_form {
+    padding: 20px 40px;
+  }
   .podcast_colon_first_img {
     border-radius: 40px 0px;
     position: relative;
@@ -777,6 +814,10 @@ p {
     z-index: 5;
     margin-top: 0;
     width: 220px;
+  }
+  .section_label {
+    font-size: 16px;
+    line-height: 26px;
   }
   .refer_patient_colon_colon {
     padding: 20px 10px 20px 10px;
@@ -791,5 +832,39 @@ p {
     z-index: 5;
     margin-top: 0;
     width: 300px;
+  }
+  .question_form_button {
+    box-sizing: border-box;
+    min-width: 50%;
+    max-height: 57.03px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(5px);
+    margin: 10px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+  .question_section_checkbox {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .popup_content {
+    background-color: #39567d;
+    max-width: 310px;
+    padding: 15px;
+    position: relative;
+    /* transition: all 0.8s ease 0s; */
+  }
+  .popup_content_form {
+    padding: 20px 30px 20px 20px;
+  }
+  .section_checkbox_text {
+    font-size: 14px;
+    line-height: 15px;
   }
 }
